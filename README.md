@@ -28,5 +28,4 @@ frontend
     public/             contains static content (images, index.html, etc)
     src/                contains all of the react app files
         config/         contains common config helpers
-frontend
 ```
