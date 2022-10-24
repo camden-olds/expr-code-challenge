@@ -18,10 +18,15 @@ _This will use docker to initialize and run the entire environment on your compu
 ```
 api
     models/             contains data models
-    node_modules/       contains npm dependancies
+    node_modules/       contains npm dependencies
     src/                
         dict/           contains dictionary files for static content
         middleware/     contains middleware functions used for express requests
         routes/         contains all api routes & logic
+frontend
+    node_modules/       contains npm dependencies
+    public/             contains static content (images, index.html, etc)
+    src/                contains all of the react app files
+        config/         contains common config helpers
 frontend
 ```
