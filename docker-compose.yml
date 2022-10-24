@@ -1,0 +1,35 @@
+version: '3.2'
+
+services:
+
+  api:
+    build: api
+    container_name: ch_api
+    restart: always
+    depends_on:
+      - mongo
+    environment:
+      PORT: 3001
+      MONGOURL: mongodb://mongo:27017/admin
+    ports:
+      - 3001:3001
+    volumes:
+      - ./api:/usr/src/app
+  
+  mongo:
+    image: mongo
+    container_name: ch_mongo
+    restart: always
+    ports:
+      - 27017:27017
+  
+  mongo-express:
+    image: mongo-express
+    container_name: ch_mongo_express
+    restart: always
+    depends_on:
+      - mongo
+    ports:
+      - 3002:8081
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://mongo:27017/
