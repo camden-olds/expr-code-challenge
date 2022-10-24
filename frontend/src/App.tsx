@@ -4,7 +4,7 @@ import Bookshelf from './Bookshelf'
 import './App.css'
 import styles from './App.module.css'
 
-const { Header, Footer, Content } = Layout;
+const { Header, Content } = Layout;
 
 const App: React.FC = () => {
 

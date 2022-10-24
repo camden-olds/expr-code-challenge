@@ -59,7 +59,7 @@ const BookForm: React.FC<{
         lastName: authorLastName
       }
     })
-  }, [title, authorFirstName, authorLastName,published,genre,pages])
+  }, [title, authorFirstName, authorLastName,published,genre,pages,canSave,genres.length,id,onChange])
 
 
   useEffect(() => {

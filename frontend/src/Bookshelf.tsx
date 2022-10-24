@@ -13,8 +13,6 @@ const Bookshelf: React.FC = () => {
   const [loading,setLoading] = useState<boolean>(true)
   const [books, setBooks] = useState<any[]>([])
   const [totalBooks, setTotalBooks] = useState<number>(0)
-  const [perPage, setPerPage] = useState<number>(20)
-  const [page, setPage] = useState<number>(1)
   const [bookModalOpen, setBookModalOpen] = useState<boolean>(false)
   const [bookSaveable, setBookSaveable] = useState<boolean>(false)
   const [selectedBook, setSelectedBook] = useState<any>({})
@@ -33,8 +31,6 @@ const Bookshelf: React.FC = () => {
       .then(response => {
         setBooks(response.data.items)
         setTotalBooks(response.data.totalItems)
-        setPerPage(response.data.perPage)
-        setPage(response.data.page)
       })
       .finally(() => setLoading(false))
   }
