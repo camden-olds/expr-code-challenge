@@ -1,0 +1,16 @@
+
+
+.newLabel {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.datePicker,
+.select {
+  width: 100%;
+}
+
+.buttonBox {
+  text-align: center;
+  margin-top: 18px;
+}

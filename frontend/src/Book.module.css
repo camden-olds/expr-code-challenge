@@ -1,0 +1,62 @@
+
+.cover {
+  aspect-ratio: 3/4;
+  background-color: rgba(0,0,0,.1);
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.cover:hover {
+  transform: scale(1.02,1.02);
+}
+
+.hoverContainer {
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,255,.1);
+  transition: all .2s ease-in-out;
+}
+
+.cover:hover .hoverContainer {
+  opacity: 1;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pages {
+  font-size: 10px;
+  text-align: center;
+}
+
+.footer {
+  align-self: flex-end;
+}
+
+.author {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.small {
+  font-size: .8em;
+  font-weight: normal;
+}
+
+.genre {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 12px;
+}
